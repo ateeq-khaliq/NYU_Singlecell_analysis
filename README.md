@@ -130,12 +130,6 @@ please cite:
 Werba, G., Weissinger, D., Kawaler, E.A. et al. Single-cell RNA sequencing reveals the effects of chemotherapy on human pancreatic adenocarcinoma and its tumor microenvironment. Nat Commun 14, 797 (2023). https://doi.org/10.1038/s41467-023-36296-4
 ```
 
-## 🙏 Acknowledgments
-
-- Thanks to all contributors and maintainers of the R packages used in this pipeline
-- Special thanks to the Seurat team for their excellent single-cell analysis framework
-- Thanks to the scRNA-seq community for their valuable feedback and suggestions
-
 ## 📧 Contact
 
 For questions or collaborations, please contact:
