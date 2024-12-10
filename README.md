@@ -1,4 +1,4 @@
-# NYU_Singlecell_analysis
+# NYU Singlecell analysis
 Single cell sample acquisition, processing, and analysis.
 
 # Single-Cell RNA Sequencing Analysis Pipeline 🧬
