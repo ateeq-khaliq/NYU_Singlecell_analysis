@@ -9,9 +9,9 @@ Single cell sample acquisition, processing, and analysis.
 
 ## 📋 Overview
 
-This repository contains a comprehensive single-cell RNA sequencing (scRNA-seq) analysis pipeline Which i have used to process the NYU samples for  analyzing pancreatic cancer samples. The analysis is based on data from the Gene Expression Omnibus (GEO) database (accession number GSE205013), which includes 27 samples (P01-P27). The pipeline integrates multiple samples, performs quality control, removes batch effects, and identifies cell types using marker genes.
+This repository contains a comprehensive single-cell RNA sequencing (scRNA-seq) analysis  Which i have used to process the NYU samples for  analyzing pancreatic cancer samples. The analysis is based on data from the Gene Expression Omnibus (GEO) database (accession number GSE205013), which includes 27 samples (P01-P27). The analysis integrates multiple samples, performs quality control, removes batch effects, and identifies cell types using marker genes.
 
-This repository contains a comprehensive single-cell RNA sequencing (scRNA-seq) analysis pipeline designed for processing and analyzing pancreatic cancer samples. The pipeline integrates multiple samples, performs quality control, removes batch effects, and identifies cell types using marker genes.
+This repository contains a comprehensive single-cell RNA sequencing (scRNA-seq) analysis is designed for processing and analyzing pancreatic cancer samples. This analysis integrates multiple samples, performs quality control, removes batch effects, and identifies cell types using marker genes.
 
 ## 🔍 Features
 
@@ -48,7 +48,7 @@ library(scDblFinder)
 ```
 
 ### Data Structure
-The pipeline expects data in the following format:
+The Analysis data general structure format:
 ```
 data_dir/
 ├── GSM[number]_P[XX]_matrix.mtx.gz
@@ -90,7 +90,7 @@ integrated_seurat <- IntegrateData(anchorset = anchors, dims = 1:30)
 
 ## 📊 Cell Type Markers
 
-The pipeline uses comprehensive marker sets for cell type identification:
+I have used the following comprehensive marker sets for cell type identification:
 
 ```R
 cell_markers <- list(
@@ -108,7 +108,7 @@ cell_markers <- list(
 
 ## 📈 Output Files
 
-The pipeline generates several output files:
+I have generated several output files:
 - `PDAC_cell_type_annotation.pdf`: Comprehensive visualization report
 - `cluster_markers_statistics.csv`: Detailed marker statistics
 - `pancreas_treated_vs_naive_DE.csv`: Differential expression analysis results
@@ -121,7 +121,7 @@ Feel free to submit issues, fork the repository, and create pull requests for an
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - Connect with me (atheeq.khaliq@gmail.com)
 
 ## 📚 Citation
 
@@ -173,7 +173,7 @@ Module scores for each cell type were calculated using AddModuleScore. Additiona
 Differential expression analysis between treatment groups (Naïve vs Treated) was performed using Seurat's FindMarkers function with the Wilcoxon rank-sum test. Analysis was restricted to pancreatic samples. Genes were considered significantly differentially expressed if they met the following criteria: adjusted p-value < 0.05 and |log2 fold change| > 0.25. A minimum detection threshold of 10% (min.pct = 0.1) was applied to ensure robust differential expression analysis.
 
 ### Software and Packages
-The analysis pipeline utilized the following R packages:
+I have utilized the following R packages:
 - Seurat (v4.4.0)
 - tidyverse (v2.0.0)
 - SingleCellExperiment (v1.28.1)
