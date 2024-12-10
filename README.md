@@ -1,8 +1,6 @@
 # NYU_Singlecell_analysis
 Single cell sample acquisition, processing, and analysis.
 
-
-
 # Single-Cell RNA Sequencing Analysis Pipeline 🧬
 
 [![R](https://img.shields.io/badge/R-4.1.0-blue.svg)](https://www.r-project.org/)
@@ -99,7 +97,7 @@ cell_markers <- list(
   "T/NK" = c("CD3E", "CD3D", "CD3G", "NKG7", "KLRD1", "NCAM1", "XCL1", "GNLY"),
   "Epithelial" = c("KRT19", "EPCAM", "KRT8", "KRT18", "TFF1", "TFF2", "TFF3"),
   "Endothelial" = c("VWF", "PECAM1", "CDH5", "PLVAP", "ENG"),
-  # ... additional cell types
+  # ... 
 )
 ```
 
@@ -137,11 +135,9 @@ GitHub Repository: https://github.com/yourusername/repository
 ## 📧 Contact
 
 For questions or collaborations, please contact:
-- Email: your.email@institution.edu
-- Twitter: [@YourTwitterHandle](https://twitter.com/YourTwitterHandle)
+- Email: akhaliq@iu.edu
 
 Methods:
-# Methods
 
 # Methods
 
@@ -196,3 +192,7 @@ The final processed data has been saved in multiple formats:
 - Differential expression results (pancreas_treated_vs_naive_DE.csv)
 - Cluster marker statistics (cluster_markers_statistics.csv)
 - Comprehensive visualization report (PDAC_cell_type_annotation.pdf)
+
+### Reference
+Werba, G., Weissinger, D., Kawaler, E.A. et al. Single-cell RNA sequencing reveals the effects of chemotherapy on human pancreatic adenocarcinoma and its tumor microenvironment. Nat Commun 14, 797 (2023). https://doi.org/10.1038/s41467-023-36296-4
+
