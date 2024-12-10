@@ -180,11 +180,11 @@ Differential expression analysis between treatment groups (Naïve vs Treated) wa
 
 ### Software and Packages
 The analysis pipeline utilized the following R packages:
-- Seurat (v4.0.0)
-- tidyverse (v1.3.1)
-- SingleCellExperiment (v1.16.0)
-- scDblFinder (v1.8.0)
-- ggplot2 (v3.3.5)
+- Seurat (v4.4.0)
+- tidyverse (v2.0.0)
+- SingleCellExperiment (v1.28.1)
+- scDblFinder (v1.20.0)
+- ggplot2 (v3.5.1)
 
 ### Data Visualization
 Visualization of results included UMAP plots for dimensionality reduction, feature plots for marker gene expression, violin plots for gene expression distribution, dot plots for marker gene expression across clusters, and heatmaps for differentially expressed genes. All visualizations were generated using ggplot2 and Seurat's built-in plotting functions.
