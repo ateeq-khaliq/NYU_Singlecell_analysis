@@ -9,7 +9,7 @@ Single cell sample acquisition, processing, and analysis.
 
 ## 📋 Overview
 
-This repository contains a comprehensive single-cell RNA sequencing (scRNA-seq) analysis pipeline for processing and analyzing pancreatic cancer samples. The analysis is based on data from the Gene Expression Omnibus (GEO) database (accession number GSE205013), which includes 27 samples (P01-P27). The pipeline integrates multiple samples, performs quality control, removes batch effects, and identifies cell types using marker genes.
+This repository contains a comprehensive single-cell RNA sequencing (scRNA-seq) analysis pipeline Which i have used to process the NYU samples for  analyzing pancreatic cancer samples. The analysis is based on data from the Gene Expression Omnibus (GEO) database (accession number GSE205013), which includes 27 samples (P01-P27). The pipeline integrates multiple samples, performs quality control, removes batch effects, and identifies cell types using marker genes.
 
 This repository contains a comprehensive single-cell RNA sequencing (scRNA-seq) analysis pipeline designed for processing and analyzing pancreatic cancer samples. The pipeline integrates multiple samples, performs quality control, removes batch effects, and identifies cell types using marker genes.
 
