@@ -94,10 +94,15 @@ The pipeline uses comprehensive marker sets for cell type identification:
 
 ```R
 cell_markers <- list(
-  "T/NK" = c("CD3E", "CD3D", "CD3G", "NKG7", "KLRD1", "NCAM1", "XCL1", "GNLY"),
-  "Epithelial" = c("KRT19", "EPCAM", "KRT8", "KRT18", "TFF1", "TFF2", "TFF3"),
-  "Endothelial" = c("VWF", "PECAM1", "CDH5", "PLVAP", "ENG"),
-  # ... 
+- T/NK cells: CD3E, CD3D, CD3G, NKG7, KLRD1, NCAM1, XCL1, GNLY
+- Epithelial cells: KRT19, EPCAM, KRT8, KRT18, TFF1, TFF2, TFF3
+- Endothelial cells: VWF, PECAM1, CDH5, PLVAP, ENG
+- Myeloid cells: CD68, LYZ, CD14, CD163, C1QA, C1QB, C1QC, SPP1
+- CAFs: DCN, COL1A1, COL3A1, ACTA2, MMP11, C3, C7, CFD, PTGDS
+- B/Plasma cells: CD79A, CD79B, MS4A1, SDC1, MZB1, JCHAIN
+- Mast cells: KIT, TPSAB1, CPA3, HPGDS
+- Proliferating cells: MKI67, TOP2A, PCNA
+# ... 
 )
 ```
 
@@ -120,10 +125,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📚 Citation
 
-If you use this pipeline in your research, please cite:
+please cite:
 ```
-Author et al. (2024). Single-cell RNA sequencing analysis pipeline for pancreatic cancer.
-GitHub Repository: https://github.com/yourusername/repository
+Werba, G., Weissinger, D., Kawaler, E.A. et al. Single-cell RNA sequencing reveals the effects of chemotherapy on human pancreatic adenocarcinoma and its tumor microenvironment. Nat Commun 14, 797 (2023). https://doi.org/10.1038/s41467-023-36296-4
 ```
 
 ## 🙏 Acknowledgments
