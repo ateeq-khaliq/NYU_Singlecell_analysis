@@ -1,7 +1,7 @@
 # NYU Singlecell analysis
 Single cell sample acquisition, processing, and analysis.
 
-# Single-Cell RNA Sequencing Analysis Pipeline 🧬
+# Single-Cell RNA Sequencing Analysis Workflow 🧬
 
 [![R](https://img.shields.io/badge/R-4.1.0-blue.svg)](https://www.r-project.org/)
 [![Seurat](https://img.shields.io/badge/Seurat-4.0.0-green.svg)](https://satijalab.org/seurat/)
