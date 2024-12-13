@@ -1,4 +1,4 @@
-# Single-Sample GSEA Analysis Pipeline
+# Single-Sample GSEA Analysis Pipeline (SSGSEA)
 
 ## Overview
 This repository contains knowhow i performed single-sample Gene Set Enrichment Analysis (ssGSEA) on epithelial cell RNA sequencing data using MSigDB hallmark gene sets and custom cancer-related gene signatures.
