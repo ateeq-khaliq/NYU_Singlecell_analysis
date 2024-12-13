@@ -53,3 +53,36 @@ install.packages(c("Seurat", "clusterProfiler", "msigdbr", "dplyr", "ggplot2"))
 - Dashed line at zero for reference
 - Legend at bottom
 - Customized text sizes for readability
+
+## METHODS
+
+
+Gene Set Enrichment Analysis of Differential Expression Data
+
+Differential Expression Analysis
+Differential expression analysis between treated and naive conditions was performed using Seurat's FindMarkers function implementing the Wilcoxon rank sum test. The analysis was conducted on a cell-type specific basis, focusing on the epithelial cell population. Genes with adjusted p-values < 0.05 were considered significantly differentially expressed.
+
+Gene Set Enrichment Analysis
+Gene Set Enrichment Analysis (GSEA) was performed using the clusterProfiler package in R. A ranking metric was calculated for each gene using the formula:
+ranking_metric = -log10(adjusted p-value) × sign(log2 fold change)
+
+This metric incorporated both statistical significance and the direction of expression changes. Genes were ranked in descending order based on this metric. The Molecular Signatures Database (MSigDB) Hallmark gene set collection (Liberzon et al., 2015) for Homo sapiens was obtained using the msigdbr package. GSEA was performed with the following parameters: minimum gene set size = 10, maximum gene set size = 500, and p-value cutoff = 1.0 to obtain a complete ranking of pathways.
+
+Statistical Analysis
+Multiple testing correction was performed using the Benjamini-Hochberg procedure to control the false discovery rate. Pathways with adjusted p-values < 0.05 were considered significantly enriched. Normalized Enrichment Scores (NES) were calculated to account for differences in gene set sizes and correlations between gene sets.
+
+Visualization
+Results were visualized using ggplot2 in R. Enrichment results were displayed as horizontal bar plots with the following features:
+- Normalized Enrichment Scores (NES) represented by bar length
+- Directionality of enrichment indicated by color (red for treated condition, blue for naive condition)
+- Statistical significance denoted by asterisks (* p<0.05, ** p<0.01, *** p<0.001)
+- Pathways ordered by NES magnitude
+- Dashed reference line at NES = 0
+
+
+
+References
+1. Stuart T, Butler A, Hoffman P, et al. Comprehensive Integration of Single-Cell Data. Cell. 2019
+2. Wu T, Hu E, Xu S, et al. clusterProfiler 4.0: A universal enrichment tool for interpreting omics data. Innovation. 2021
+3. Liberzon A, Birger C, Thorvaldsdóttir H, et al. The Molecular Signatures Database Hallmark Gene Set Collection. Cell Systems. 2015
+4. Wickham H. ggplot2: Elegant Graphics for Data Analysis. Springer-Verlag New York, 2016
