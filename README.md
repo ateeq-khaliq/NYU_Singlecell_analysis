@@ -89,40 +89,50 @@ integrated_seurat <- IntegrateData(anchorset = anchors, dims = 1:30)
 ```
 # PDAC Data Summary
 
-This dataset contains **32,736 features** across **91,895 samples**, processed using the Seurat package. Below is the breakdown of samples by variable (`Var1`) and their respective frequencies.
+# PDAC1 Data Summary
+
+This dataset contains **32,736 features** across **141,186 single cells**, processed using the Seurat package. Below is the breakdown of samples and their respective single-cell counts.
 
 ## Seurat Object Details
 - **Features**: 32,736
-- **Samples**: 91,895
+- **Single Cells**: 141,186
 - **Assays**: 2
   - **RNA**: 30,736 features
   - **Integrated**: 1 other assay
 - **Dimensional Reductions**: PCA, UMAP
 
-## Sample Frequency Table
+## Single Cell Distribution
 
-| Samples  | Cells     |
-|:---------|----------:|
-| P03      |     14157 |
-| P04      |      2163 |
-| P05      |      8995 |
-| P06      |      1102 |
-| P07      |      3544 |
-| P08      |      4195 |
-| P09      |      1210 |
-| P10      |      3318 |
-| P12      |      2884 |
-| P13      |      1920 |
-| P14      |     11260 |
-| P15      |      6472 |
-| P19      |      9370 |
-| P20      |      5638 |
-| P22      |      4599 |
-| P23      |      7118 |
-| P26      |      3950 |
-| **Total**|  **91895** |
-
-
+| Samples  | Single Cells |
+|:---------|-------------:|
+| P01      |         4521 |
+| P02      |         3291 |
+| P03      |        14157 |
+| P04      |         2163 |
+| P05      |         8995 |
+| P06      |         1102 |
+| P07      |         3544 |
+| P08      |         4195 |
+| P09      |         1210 |
+| P10      |         3318 |
+| P11      |         4242 |
+| P12      |         2884 |
+| P13      |         1920 |
+| P14      |        11260 |
+| P15      |         6472 |
+| P16      |         2694 |
+| P17      |         3804 |
+| P18      |        11103 |
+| P19      |         9370 |
+| P20      |         5638 |
+| P21      |         1913 |
+| P22      |         4599 |
+| P23      |         7118 |
+| P24      |         2358 |
+| P25      |         7655 |
+| P26      |         3950 |
+| P27      |         7710 |
+| **Total**|     **141186** |
 
 ## 📊 Cell Type Markers
 
