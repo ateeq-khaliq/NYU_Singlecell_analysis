@@ -89,8 +89,6 @@ integrated_seurat <- IntegrateData(anchorset = anchors, dims = 1:30)
 ```
 # PDAC Data Summary
 
-# PDAC1 Data Summary
-
 This dataset contains **32,736 features** across **141,186 single cells**, processed . Below is the breakdown of samples and their respective single-cell counts.
 
 ## Seurat Object Details
